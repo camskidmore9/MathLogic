@@ -1,0 +1,40 @@
+p cnf 36(same as number of vars)  12(4+ 8 * num of clauses)
+
+c --Express starting state
+1 0
+-2 0
+-3 0
+4 0
+
+c -- This is setting as and instead of or for starting state clauses
+
+c -- Transistion from 0 -> 1
+5 -1 0
+-5 1 0
+
+6 -2 0
+-6 2 0
+
+c -- Equivalence (no change between states)
+7 -3 0
+-7 3 0
+
+c -- XOR (bit change)
+-8 -4 0
+8 4 0
+
+
+c -- Transition from 1 -> 2
+-9 -5 0
+9 5 0
+
+10 -6 0
+-10 6 0
+
+-11 -7 0
+11 7 0
+
+12 -8 0
+-12 8 0
+
+c -- Transition from 2 -> 3
