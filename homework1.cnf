@@ -1,4 +1,4 @@
-p cnf 56 ???(4+ 8 * num of clauses)
+p cnf 56 70
 
 c --Express starting state
 -1 0
